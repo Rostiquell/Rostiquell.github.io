@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Segoe;
+    src: url(/fonts/SegoeWPLight.ttf);
+}
+@font-face {
+    font-family: SegoeMain;
+    src: url(/fonts/SegoeWPN.ttf);
+}
+body{
+    margin: 0;
+}
+.banner{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url("../img/banner.png")
+}
+.footer{
+    text-align: center;
+    font-family: 'Segoe', "Nirmala UI";
+    padding: 30px;
+    font-size: 21px;
+    color: #6f7173;
+}
+.nav-logo {
+    display: inline-block;
+    margin-left: 130px;
+    text-decoration: none;
+    font-family: 'Segoe', sans-serif;
+    color: #000;
+}
+.menu-main {
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 100px;
+    padding: 0;
+    float: right;
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-size: 15pt;
+    padding: 5px;
+    font-family: 'SegoeMain', sans-serif;
+    color: gray;
+}
+.menu-main a:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    color: white;
+}
+.menu-main a:hover {
+    border-bottom: 3px solid #5094f2;
+}
+.layout { overflow: hidden; }
+.layout DIV { float: left; text-align: center; margin-top: 40px; padding-left: 120px}
+.p1 {width: 20%; }
+.p2 {width: 20%; }
+.p3 {width: 20%; }
+.tag{
+    color: #5094f2;
+    font-family: 'SegoeMain', sans-serif;
+    font-size: 20px;
+}
+.desk{
+    font-family: 'SegoeMain', sans-serif;
+    font-size: 14px;
+}
+.cart{
+    font-size: 40px;
+    margin-left: 130px;
+    color: #6f7173;
+}
+.bull{
+    font-size: 26px;
+}
+.desk-cart{
+    font-size: 15px;
+}
+.cart{
+    font-family: 'SegoeMain', sans-serif;
+    padding-top: 50px;
+}
+.layout1 { overflow: hidden; }
+.layout1 DIV { float: left; text-align: left; padding-left: 120px}
+.cart1{
+    width: 30%;
+    margin-top: 0px;
+}
+.cart2{
+    width: 50%;
+    color: #6f7173;
+    font-family: 'SegoeMain', sans-serif;
+    font-size: 30px;
+    line-height: 150%;
+}
