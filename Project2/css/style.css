@@ -1,0 +1,240 @@
+body{
+    background-color: #efefef;
+    padding: 100px;
+    margin-left: 120px;
+}
+li {
+    list-style: none;
+}
+li:before {
+    content: '■';
+    display: block;
+    position: relative;
+    max-width: 0;
+    max-height: 0;
+    left: -30px;
+    color: #37b0ae;
+}
+a{
+    text-decoration: none;
+}
+p{
+    padding: 0;
+    margin: 10px;
+}
+.bloks{
+    position: relative;
+}
+.tealbg{
+    width: 465px;
+    height: 610px;
+    background-color: #37b0ae;
+
+}
+.whitebg{
+    width: 540px;
+    height: 700px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 65px;
+    left: 685px;
+}
+.char{
+    margin-top: 78px;
+    margin-left: 80px;
+}
+.fuj{
+    width: 99px;
+    height: 17px;
+    padding: 35px;
+}
+.name{
+    color: #3a4d5c;
+    font-family: Montserrat;
+    font-size: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.desc{
+    color: #3a4d5c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.features{
+    margin-top: 53px;
+    color: #7c8d9c;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* Text style for "Features" */
+    letter-spacing: 0.33px;
+}
+.list{
+    color: #7c8d9c;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.info{
+    color: #7c8d9c;
+    margin-top: 47px;
+    padding-right: 18px;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.28px;
+}
+.camera{
+    position: absolute;
+    top: 203px;
+    left: 180px
+}
+.camera-shadow{
+    position: absolute;
+    top: 400px;
+    left: 105px
+}
+.quanity{
+    margin-top: 30px;
+    color: #7c8d9c;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.price{
+    color: #3a4d5c;
+    font-family: Montserrat;
+    font-size: 37px;
+    font-weight: 400;
+}
+.oldprice{
+    color: #7c8d9c;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+}
+.btn1{
+    width: 200px;
+    height: 45px;
+    background-color: #37b0ae;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+}
+.btn2{
+    width: 200px;
+    height: 45px;
+    border: 1px solid #7c8d9c;
+    cursor: pointer;
+    background-color: transparent;
+    color: #7c8d9c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+}
+.shop{
+display: block;
+    padding: 20px;
+}
+.cameras{
+    position: absolute;
+    left: 630px;
+    top: 280px;
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+.rectengle{
+    padding: 10px;
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.43);
+    background-color: rgba(255, 255, 255, 0.43);
+    margin: 6px;
+}
+.kyb1 {
+    color: #7c8d9c;
+    font-family: Montserrat;
+    font-weight: 400;
+    width: 40px;
+    vertical-align: center;
+    height: 35px;
+    border: 1px solid #7c8d9c;
+    background-color: transparent;
+}
+.kyb {
+    color: #7c8d9c;
+    font-family: Montserrat;
+    font-weight: 400;
+    width: 40px;
+    cursor: pointer;
+    height: 35px;
+    border: 1px solid #7c8d9c;
+    background-color: transparent;
+}
+.row {
+    display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .shop{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .whitebg{
+        width: 100%;
+        max-width: 800px;
+        height: 700px;
+        background-color: #ffffff;
+        position: fixed;
+        top: 610px;
+        left: 0;
+        padding-top: 78px;
+    }
+    .tealbg{
+        max-width: 800px;
+        width: 100%;
+    }
+    .camera{
+        width: 338px;
+        height: 340px;
+        top: 82px;
+        left: 92px;
+    }
+    .fuj{
+        padding: 20px;
+    }
+    .camera-shadow{
+        position: absolute;
+        top: 230px;
+        left: 100px;
+        width: 488px;
+        height: 341px;
+    }
+    .cameras {
+        position: relative;
+        left: 106px;
+        top: -120px;
+        z-index: 1;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        align-content: center;
+        justify-content: inherit;
+    }
+
+}
