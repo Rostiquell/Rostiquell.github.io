@@ -196,8 +196,7 @@ display: block;
         padding: 0;
     }
     .whitebg{
-        width: 100%;
-        max-width: 800px;
+        width: 540px;
         height: 700px;
         background-color: #ffffff;
         position: fixed;
@@ -206,8 +205,7 @@ display: block;
         padding-top: 78px;
     }
     .tealbg{
-        max-width: 800px;
-        width: 100%;
+        width: 540px;
     }
     .camera{
         width: 338px;
