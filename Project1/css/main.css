@@ -21,7 +21,6 @@ hr{
 }
 body{
     overflow-x:hidden;
-    min-width: 360px;
 }
 h2 {
     position: absolute;
@@ -38,12 +37,81 @@ h2 {
 h2 span{
     font-size: 36px;
 }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.list-menu{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 100px;
+    padding: 0;
+    float: right;
+}
+.list-menu > li > a{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-size: 15pt;
+    padding: 5px;
+    font-family: 'SegoeMain', sans-serif;
+    color: gray;
+}
+.list-menu > li > a:hover{
+    border-bottom: 3px solid #5094f2;
+}
+.menu-main a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-size: 15pt;
+    padding: 5px;
+    font-family: 'SegoeMain', sans-serif;
+    color: gray;
+}
+.menu-main a:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    color: white;
+}
+
+#btn-menu{
+    display: none;
+}
+#btn-menu + label{
+    display: none;
+    position: relative;
+    left: 145px;
+    color: #000;
+    height: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+#btn-menu + label:before{
+    content: '\f0c9';
+    display: inline-block;
+    font-family:'FontAwesome';
+    font-size: 22px;
+}
+#btn-menu:checked + label:before{
+    content: '\f00d';
+    color: #f00;
+}
+.shape{
+    width: 25px;
+    height: 25px;
+}
 .sign{
     border-radius: 2px;
     border: none;
     background-color: #5094f2;
-    width: 172px;
-    height: 41px;
+    width: 235px;
+    height: 53px;
     color: #ffffff;
     font-family: "Segoe WP";
     font-size: 22px;
@@ -90,44 +158,19 @@ h2 span{
     color: #6f7173;
 }
 .nav-logo {
+    font-size: 58px;
     display: inline-block;
     margin-left: 130px;
     text-decoration: none;
     font-family: 'Segoe', sans-serif;
     color: #000;
 }
-.menu-main {
-    list-style: none;
-    margin-top: 30px;
-    margin-right: 100px;
-    padding: 0;
-    float: right;
-}
-.menu-main li {display: inline-block;}
-.menu-main a {
-    text-decoration: none;
-    display: block;
-    position: relative;
-    font-size: 15pt;
-    padding: 5px;
-    font-family: 'SegoeMain', sans-serif;
-    color: gray;
-}
-.menu-main a:before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    opacity: 0;
-    color: white;
-}
 .iphone{
     margin-left: 177px;
     margin-top: 38px;
 }
-.menu-main a:hover {
-    border-bottom: 3px solid #5094f2;
-}
-.layout { overflow: hidden; padding-top: 57px}
+
+.layout { overflow: hidden; padding-top: 57px; width: 150%}
 .layout DIV { float: left; text-align: center; margin-top: 40px; padding-left: 120px}
 .p1 {width: 20%; }
 .p2 {width: 20%; }
@@ -161,6 +204,7 @@ h2 span{
 }
 .desk-cart{
     font-size: 15px;
+    width: 600px;
 }
 .cart{
     color: #6f7173;
@@ -183,6 +227,10 @@ h2 span{
     font-size: 15px;
     font-weight: 300;
     line-height: 36px;
+}
+.logo{
+    width: 48px;
+    height: 48px;
 }
 
 @media screen and (max-width: 950px) {
@@ -273,4 +321,105 @@ h2 span{
         font-size: 23px;
     }
 }
-@media screen and (max-width: )
+@media screen and (max-width: 480px) {
+    #btn-menu + label{
+        display: inline-block;
+    }
+    #btn-menu + label + .list-menu{
+        display: none;
+    }
+    #btn-menu:checked + label + .list-menu{
+        display: block;
+    }
+    .nav-logo{
+        font-size: 37px;
+    }
+    .logo{
+        width: 32px;
+        height: 32px;
+    }
+    .iphone{
+        height: 140px;
+        width: 95px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    h2{
+        top: 50px;
+        width: 245px;
+        height: 131px;
+        left: 111px;
+        font-size: 22px;
+        line-height: 20.94px;
+    }
+    h2 span{
+        font-size: 16px;
+    }
+    .shape{
+        width: 16px;
+        height: 16px;
+    }
+    .sign {
+        width: 145px;
+        height: 44px;
+        position: absolute;
+        left: 140px;
+        top: 125px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .banner {
+        /* width: 100%; */
+        height: 146px;
+    }
+    .layout{
+        padding: 0px;
+    }
+    .imgleft {
+        padding-left: 10px;
+        width: 96px;
+        height: 96px;
+    }
+    .p1{
+        width: 65%;
+    }
+    .p2{
+        width: 65%;
+    }
+    .p3{
+        width: 65%;
+    }
+    .cart{
+        padding-top: 10px;
+        margin-left: 5px;
+        font-size: 35px;
+    }
+    .desk-cart {
+        font-size: 14px;
+        width: 75%;
+        line-height: 27px;
+        text-align: justify;
+    }
+    .footer{
+        font-size: 13px;
+        padding-top: 12px;
+
+    }
+    .bull{
+        font-size: 21px;
+    }
+    .cartimg {
+        height: 115px;
+        width: 165px;
+    }
+    .layout1 DIV {
+        padding-left: 10px;
+    }
+    hr{
+        margin-top: 0px;
+    }
+    ul.list-menu{
+        background: #fff;
+        z-index: 1;
+    }
+}
