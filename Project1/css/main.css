@@ -393,6 +393,7 @@ h2 span{
         padding-top: 10px;
         margin-left: 5px;
         font-size: 35px;
+        text-align: center;
     }
     .desk-cart {
         font-size: 14px;
@@ -407,10 +408,12 @@ h2 span{
     }
     .bull{
         font-size: 21px;
+        margin-left: 65px;
     }
     .cartimg {
         height: 115px;
         width: 165px;
+        margin-left: 80px;
     }
     .layout1 DIV {
         padding-left: 10px;
