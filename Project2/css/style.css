@@ -147,15 +147,14 @@ display: block;
 }
 .cameras {
     position: absolute;
-    left: 50%;
+    left: 685px;
     z-index: 1;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     align-items: center;
     align-content: center;
     justify-content: inherit;
-    top: initial;
-    bottom: 30px;
+    top: 320px;
     transform: translateX(-50%);
 }
 .rectengle{
@@ -198,20 +197,30 @@ display: block;
         padding: 0;
     }
     .whitebg{
-        width: 540px;
-        height: 700px;
+        width: 100%;
+        max-height: 595px;
         background-color: #ffffff;
         top: 610px;
         left: 0;
     }
-    .tealbg{
-        width: 540px;
+    .list {
+        font-size: 16px;
+        line-height: 26px;
     }
-    .camera{
+    .tealbg{
+        width: 100%;
+    }
+    .btn1{
+        width: 48%;
+    }
+    .btn2{
+        width: 48%;
+    }
+    .camera {
         width: 338px;
         height: 340px;
         top: 82px;
-        left: 92px;
+        left: 140px;
     }
     .fuj{
         padding: 20px;
@@ -232,9 +241,16 @@ display: block;
         align-items: center;
         align-content: center;
         justify-content: inherit;
-        top: initial;
-        bottom: 220px;
+        top: 490px;
         transform: translateX(-50%);
+    }
+    .features {
+        margin-top: 35px;
+        font-size: 16px;
+    }
+    .char {
+        margin-top: 33px;
+        margin-left: 13px;
     }
 
 }
